@@ -1,0 +1,42 @@
+What is HTTP?
+
+- hypertext transfer protocol. protocol that determines how information is sent, received, and processed . first piece of URL. 
+
+What is a URL?
+
+- uniform resource locator, web address. consist of five parts: protocol, hostname, port, resource, query.  
+
+What is DNS?
+
+- domain name system, works as a phonebook for the web. translates hostname into corresponding IP address
+
+What is a query string?
+
+- way to specify requests in the URL. starts with '?'
+
+What are two HTTP verbs and how are they different?
+
+- request and response. request is information being sent to server from web browser. response is the information sent back to browser from server.
+
+What is an HTTP request?
+
+- information usually sent thru GET method to the server, uses the resource URL, 
+and includes headers which includes hostname you're asking about, date browser thinks it is, language your browser wants, cookies, and more.
+
+What is an HTTP response?
+
+- information sent back to browser from the server involving the request. includes a protocol, response status code, and headers. also includes html, css, and javascript usually
+
+What is an HTTP header? Give a couple examples of request and response headers you have seen.
+
+- includes hostname you're asking about, date browser thinks it is, language your browser wants, cookies, and more.
+request to google.com, 200 status code, 70 total request.
+request to my gmail, 200 and 302 status codes, 272 total request
+
+What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+
+- Your browser “resolves” the name into an IP address using DNS
+Your browser makes a request to that IP address, including headers (info about browser, any previous cookies, and other things)
+The server sends a response (typically, HTML, with a status code (200 if it was sucessful)
+The browser makes a DOM from that HTML, and finds any other resources needed (images, CSS, JavaScript, etc)
+The browser makes separate HTTP requests for those resources and receives response from the server for each
